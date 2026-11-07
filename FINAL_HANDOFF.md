@@ -4,7 +4,7 @@
 
 Rowcraft is implemented in `rowcraft-sales-automation/` as a locally runnable Python project and a static React + TypeScript portfolio demo. The Python engine validates CSV records and calculates metrics with `Decimal`; its CLI writes JSON, normalized CSV, and escaped static HTML. FastAPI offers local `/health` and `/api/v1/analyze` routes. The browser demo starts with synthetic shared fixture data, performs calculations locally, supports CSV upload, date/status/product filters, a searchable and sortable detail table, JSON/monthly CSV export, and print styling. A failed upload preserves the current dataset.
 
-The demo uses no account, analytics, external data service, or server upload. GitHub Pages will host only the static browser build. The FastAPI app remains a separately run local demonstration.
+The demo uses no account, analytics, external data service, or server upload. GitHub Pages hosts only the static browser build. The FastAPI app remains a separately run local demonstration.
 
 ## Verified quality gates
 
@@ -35,24 +35,11 @@ No browser-generated screenshots could be saved as repository image files; the b
 - The browser supports currencies with two minor-unit digits only. Mixed currencies are rejected.
 - The tool is not an accounting, tax, or settlement system; its data contract and limitations are documented.
 - The test environment reports the Starlette/httpx deprecation warning noted above.
-- GitHub repository creation, push, Pages configuration, and live URL verification remain outstanding. No remote, credentials, or published site are present.
+- The live GitHub Pages site is a static browser demo; the local FastAPI app is not hosted there.
 
-## Publish when ready
+## GitHub publication
 
-1. Create `mrl0r3/rowcraft-sales-automation` on GitHub.
-2. From this project directory, run:
-
-   ```powershell
-   git add .
-   git commit -m "Build Rowcraft sales reporting portfolio"
-   git remote add origin https://github.com/mrl0r3/rowcraft-sales-automation.git
-   git push -u origin main
-   ```
-
-3. In GitHub repository **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions** and save.
-4. Verify that `Deploy static demo to GitHub Pages` completes successfully, then open `https://mrl0r3.github.io/rowcraft-sales-automation/`.
-
-The URL is expected only if the owner and repository name match; it is not live or verified today. See [docs/deployment.md](docs/deployment.md) for details. Do not push or publish until the owner authorizes it.
+The user authorized publication. The public repository is [MRL0R3/rowcraft-sales-automation](https://github.com/MRL0R3/rowcraft-sales-automation), and the [live demo](https://mrl0r3.github.io/rowcraft-sales-automation/) returned HTTP 200. The initial Pages run began before Pages was enabled and failed at deployment; Pages was then configured for GitHub Actions and the manually dispatched run completed successfully. CI on the initial push also passed. See [docs/deployment.md](docs/deployment.md) for the ongoing workflow.
 
 
 ## Follow-up: white page when double-clicking the source HTML
@@ -63,4 +50,4 @@ The URL is expected only if the owner and repository name match; it is not live 
 
 `UPGRADE_PLAN.md` records the completed work. The browser report now shows a correct negative net amount, average order value, a downloadable example CSV, an in-page CSV schema guide, row-specific import errors, data-scope explanations, and feedback after exports. Mobile filters collapse to expose report metrics sooner. The desktop introduction was shortened to bring the report into the first viewport. The chart and product breakdown were extracted from `App.tsx`; the stylesheet was formatted for maintenance. The table header was corrected after a browser scroll review showed it covering a data row. The tablet trend chart now takes the full report width.
 
-The final local frontend checks passed: lint, typecheck, **16 tests**, build, and npm audit (0 vulnerabilities). Python Ruff checks and **17 tests** passed. The production preview was reviewed at 1440×900, 768×1024, 390×844, and 375×812. The document had no horizontal overflow in those inspected layouts. Browser screenshots were available inline but could not be saved into this repository by the available browser surface; there are no screenshot image assets or automated axe results. The static Pages workflow has not run on GitHub, so deployment remains unverified.
+The final local frontend checks passed: lint, typecheck, **16 tests**, build, and npm audit (0 vulnerabilities). Python Ruff checks and **17 tests** passed. The production preview was reviewed at 1440×900, 768×1024, 390×844, and 375×812. The document had no horizontal overflow in those inspected layouts. Browser screenshots were available inline but could not be saved into this repository by the available browser surface; there are no screenshot image assets or automated axe results. The static Pages workflow subsequently deployed successfully on GitHub.

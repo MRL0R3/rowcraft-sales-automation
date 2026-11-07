@@ -2,7 +2,7 @@
 
 **From messy orders to decisions.** A real Python sales reporting engine with a privacy-minded, browser-only interactive preview.
 
-> GitHub Pages demo: planned at [mrl0r3.github.io/rowcraft-sales-automation](https://mrl0r3.github.io/rowcraft-sales-automation/) after publication. It is not deployed yet. Run the static demo locally with the quick start below.
+> **[Try the live dashboard](https://mrl0r3.github.io/rowcraft-sales-automation/)** · [View the source](https://github.com/MRL0R3/rowcraft-sales-automation)
 
 > **Opening the HTML directly?** `frontend/index.html` is the source entry for Vite and is not standalone. From the project root, run `cd frontend` and `npm run dev`; Vite opens the working dashboard in your browser. After building, `npm run preview` opens the production bundle.
 
@@ -60,7 +60,7 @@ npm run test
 npm run build
 ```
 
-GitHub Actions runs Python and frontend checks on pushes and pull requests. The Pages workflow builds and deploys on pushes to `main` or manual dispatch after Pages is configured. There is no CI badge because the remote repository is not yet created.
+GitHub Actions runs Python and frontend checks on pushes and pull requests. The Pages workflow builds and deploys on pushes to `main` or manual dispatch. [CI](https://github.com/MRL0R3/rowcraft-sales-automation/actions/workflows/ci.yml) and [Pages deployment](https://github.com/MRL0R3/rowcraft-sales-automation/actions/workflows/pages.yml) are available in the repository.
 
 ## Data and privacy
 
