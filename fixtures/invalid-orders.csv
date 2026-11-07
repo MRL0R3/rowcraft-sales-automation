@@ -1,0 +1,4 @@
+order_id,date,product,quantity,unit_price,status,currency
+BAD-1,2026-02-30,Sample,1,10.00,completed,USD
+BAD-2,2026-02-01,Sample,0,NaN,unknown,USD
+BAD-3,2026-02-01,Sample,1,-1.00,refunded,USD

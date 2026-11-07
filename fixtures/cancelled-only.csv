@@ -1,0 +1,2 @@
+order_id,date,product,quantity,unit_price,status,currency
+CANCEL-01,2026-01-04,Sample item,2,12.50,cancelled,USD

@@ -1,0 +1,20 @@
+{
+  "currency": "USD",
+  "row_count": 8,
+  "completed_revenue": "214.00",
+  "refunded_amount": "12.50",
+  "net_revenue": "201.50",
+  "completed_orders": 5,
+  "average_order_value": "42.80",
+  "refund_rate_by_value": "0.058411",
+  "monthly": [
+    {"month": "2026-10", "completed_revenue": "84.00", "refunded_amount": "0.00", "net_revenue": "84.00", "completed_orders": 2},
+    {"month": "2026-11", "completed_revenue": "90.00", "refunded_amount": "12.50", "net_revenue": "77.50", "completed_orders": 2},
+    {"month": "2026-12", "completed_revenue": "40.00", "refunded_amount": "0.00", "net_revenue": "40.00", "completed_orders": 1}
+  ],
+  "products": [
+    {"product": "Canvas Tote", "completed_revenue": "100.00", "quantity": 5, "orders": 3},
+    {"product": "Beeswax Candle", "completed_revenue": "64.00", "quantity": 8, "orders": 2},
+    {"product": "Ceramic Mug", "completed_revenue": "50.00", "quantity": 4, "orders": 1}
+  ]
+}

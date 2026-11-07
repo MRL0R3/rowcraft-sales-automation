@@ -1,0 +1,9 @@
+order_id,date,product,quantity,unit_price,status,currency
+ORD-1001,2026-10-01,Canvas Tote,2,19.90,completed,USD
+ORD-1001,2026-10-01,Beeswax Candle,3,8.00,completed,USD
+ORD-1002,2026-10-15,Canvas Tote,1,20.20,completed,USD
+ORD-1003,2026-11-02,Ceramic Mug,4,12.50,completed,USD
+ORD-1003,2026-11-12,Ceramic Mug,1,12.50,refunded,USD
+ORD-1004,2026-11-12,Canvas Tote,2,20.00,completed,USD
+ORD-1005,2026-12-01,Beeswax Candle,5,8.00,completed,USD
+ORD-1006,2026-12-03,Ceramic Mug,1,12.50,cancelled,USD

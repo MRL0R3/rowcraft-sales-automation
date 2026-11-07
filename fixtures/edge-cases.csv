@@ -1,0 +1,4 @@
+order_id,date,product,quantity,unit_price,status,currency
+EDGE-1,2026-01-02,Sample,1,0.10,completed,USD
+EDGE-2,2026-01-02,Sample,1,0.20,completed,USD
+EDGE-3,2026-01-03,Cancelled item,1,10.00,cancelled,USD
